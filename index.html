@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="HiddenDrugs">
+    <meta name="author" content="Kilian Peyron">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HiddenDrugs</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/responsive.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="myDrugsNav" id="myDrugsNav">
+        <a href="index.html"><div class="myDrugsNavLogo"><img src="assets/logo.png" alt="HiddenDrugs"></div></a>
+        <a href="index.html" class="myDrugsNavItem">Home</a>
+        <a href="economy.html" class="myDrugsNavItem">Economy</a>
+        <a href="premium.html" class="myDrugsNavItem">Premium</a>
+        <a href="party-packs.html" class="myDrugsNavItem">Party Packs</a>
+        <a href="safety.html" class="myDrugsNavItem">Safety</a>
+        <a href="faq.html" class="myDrugsNavItem">FAQ</a>
+        <a href="contact.html" class="myDrugsNavItem">Contact</a>
+        <a href="" class="myDrugsNavItem"><i class='bx bx-search myDrugsNavItem'></i></a>
+        <a href="login.html" class="myDrugsLoginBtn myDrugsNavItem">Login</a>
+        <a href="javascript:void(0);" class="hambIcon"><i class='bx bx-menu'></i></a>
+    </div>
+    <div class="MyDrugsRespMenu">
+        <ul>
+            <a href="index.html" class="myDrugsNavItem">Home</a>
+            <a href="economy.html" class="myDrugsNavItem">Economy</a>
+            <a href="premium.html" class="myDrugsNavItem">Premium</a>
+            <a href="party-packs.html" class="myDrugsNavItem">Party Packs</a>
+            <a href="safety.html" class="myDrugsNavItem">Safety</a>
+            <a href="faq.html" class="myDrugsNavItem">FAQ</a>
+            <a href="contact.html" class="myDrugsNavItem">Contact</a>
+            <a href="" class="myDrugsNavItem"><i class='bx bx-search myDrugsNavItem'></i></a>
+            <a href="login.html" class="myDrugsLoginBtn myDrugsNavItem">Login</a>
+         </ul>
+    </div>
+    <div class="myDrugsMain">
+        <div class="myDrugsTitleBar">
+            <h3>HiddenDrugs</h3>
+            <span class="myDrugsTBWB">Welcome Back</span>
+            <span class="myDrugsTBText">New Product</span>
+            <span class="myDrugsTBText">Special Offers</span>
+            <a href="shop.html" class="myDrugsTBBtn">Shop</a>
+        </div>
+        <div class="myDrugsHome">
+            <h3>HiddenDrugs</h3>
+            <h1 class="myDrugsHomeH1">Best quality.</h1>
+            <h1 class="myDrugsHomeH1">Best delivery.</h1>
+            <h1 class="myDrugsHomeH1">Best security.</h1>
+            <p class="myDrugsHomeP">Prices as low as 0.0013 BTC.</p>
+            <div class="imgBg">
+                <img class="pre_imgBg" src="assets/img/pre_imgBg.png" alt="">
+                <img class="_imgBg" src="assets/img/imgBg.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="myDrugsNew">
+        <h3>HiddenDrugs is open!</h3>
+        <a href="shop.html" class="myDrugsTBBtn myDrugsNewBtn">Shopping now</a>
+    </div>
+    <script>
+        const hamburger = document.querySelector(".hambIcon");
+        const navMenu = document.querySelector(".MyDrugsRespMenu");
+        hamburger.addEventListener("click", respMenu);
+        function respMenu() {
+          hamburger.classList.toggle("responsive");
+          navMenu.classList.toggle("responsive");
+        }
+    </script>
+</body>
+</html>
